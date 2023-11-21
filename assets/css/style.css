@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+/* Constant styles  */
+@font-face {
+  font-family: BlitarianLibertyBlack;
+  src: url(../fonts/BlitarianLiberty-Black.ttf);
+}
+@font-face {
+  font-family: BlitarianLibertyBold;
+  src: url(../fonts/BlitarianLiberty-Bold.ttf);
+}
+@font-face {
+  font-family: BlitarianLibertyExtraBlack;
+  src: url(../fonts/BlitarianLiberty-ExtraBlack.ttf);
+}
+@font-face {
+  font-family: BlitarianLibertyExtraBold;
+  src: url(../fonts/BlitarianLiberty-ExtraBold.ttf);
+}
+@font-face {
+  font-family: BlitarianLibertyExtraLight;
+  src: url(../fonts/BlitarianLiberty-ExtraLight.ttf);
+}
+@font-face {
+  font-family: BlitarianLibertyLight;
+  src: url(../fonts/BlitarianLiberty-Light.ttf);
+}
+@font-face {
+  font-family: BlitarianLibertyMedium;
+  src: url(../fonts/BlitarianLiberty-Medium.ttf);
+}
+@font-face {
+  font-family: BlitarianLibertyRegular;
+  src: url(../fonts/BlitarianLiberty-Regular.ttf);
+}
+@font-face {
+  font-family: BlitarianLibertySemiBold;
+  src: url(../fonts/BlitarianLiberty-SemiBold.ttf);
+}
+@font-face {
+  font-family: BlitarianLibertyThin;
+  src: url(../fonts/BlitarianLiberty-Thin.ttf);
+}
+@font-face {
+  font-family: Guavast;
+  src: url(../fonts/Guavast.ttf);
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  transition: all 0.4s ease-in;
+  font-family: BlitarianLibertyRegular;
+}
+
+body {
+  font-family: BlitarianLibertyRegular;
+  line-height: normal !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 0 !important;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+button {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* // Constant Styles */
+ul {
+  margin-bottom: 0;
+}
+
+.form-control {
+  border-radius: 7px;
+  background-color: rgba(245, 247, 250, 0.386);
+}
+.form-control:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+p {
+  font-size: 1.1rem;
+  color: #000;
+}
+
+/* Main Style */
+.btn_style {
+  display: inline-flex;
+  height: 50px;
+  padding: 18px;
+  min-width: 169px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F23005;
+  border: 1px solid #F23005;
+  border-radius: 7px;
+  color: #fff;
+}
+.btn_style:hover {
+  color: #F23005;
+  background-color: #fff;
+}
+
+.card_img {
+  height: 100vh;
+  position: relative;
+}
+.card_img .img_parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card_img .img_parent img,
+.card_img .img_parent video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.section_header {
+  margin: 20px 0;
+}
+.section_header h5 {
+  font-size: 2rem;
+}
+
+.pd-150 {
+  padding: 0 350px;
+}
+
+@media (max-width: 1920px) {
+  .pd-150 {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 1280px) {
+  .pd-150 {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 991px) {
+  .pd-150 {
+    padding: 0 30px;
+  }
+}
+.splashoverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splashoverlay {
+  z-index: 999;
+  background-color: #F23005;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#counter {
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 5rem;
+}
+
+.splashoverlay .overlay-loader img {
+  width: 120px;
+}
+
+/* ================================================================ */
+.custom_navbar {
+  padding: 27px 0;
+}
+.custom_navbar .nav_link {
+  color: #000;
+  font-size: 1.2rem;
+  font-family: BlitarianLibertyThin;
+}
+.custom_navbar .links .nav_link {
+  margin-right: 65px;
+}
+.custom_navbar .links .nav_item:last-child .nav_link {
+  margin-right: 0;
+}
+.custom_navbar .other_links a {
+  text-transform: uppercase;
+}
+
+/* ================================================================ */
+.home_header {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+}
+.home_header .home_header_content .home_header_title {
+  color: #000;
+  font-feature-settings: "salt" on;
+  font-family: Guavast;
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: normal;
+}
+.home_header .home_header_content .home_header_text {
+  color: #000;
+  font-size: 2.7rem;
+  font-style: normal;
+  font-family: BlitarianLibertyThin;
+  line-height: normal;
+}
+
+/* ================================================================ */
+.home_about {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.home_about .home_about_content .home_about_title {
+  color: #000;
+  font-size: 1.2rem;
+  font-family: BlitarianLibertyThin;
+  margin-bottom: 80px;
+}
+.home_about .home_about_content .home_about_text {
+  color: #000;
+  font-size: 2rem;
+  font-family: BlitarianLibertyThin;
+  line-height: 48px;
+}
+.home_about .home_about_img {
+  text-align: center;
+}
+.home_about .home_about_img img {
+  margin: auto;
+  width: 450px;
+}
+
+/* ================================================================ */
+.home_features .home_features_header {
+  margin-bottom: 80px;
+}
+.home_features .home_features_header h5 {
+  text-align: center;
+  color: #000;
+  font-feature-settings: "salt" on;
+  font-family: Guavast;
+  font-size: 2.7rem;
+  font-weight: 400;
+}
+.home_features .home_features_img {
+  text-align: center;
+}
+.home_features .home_features_img img {
+  width: 550px;
+  margin: auto;
+}
+.home_features .home_features_row {
+  margin-bottom: 120px;
+}
+.home_features .home_features_content .home_features_title {
+  color: #000;
+  font-size: 2.7rem;
+  font-weight: BlitarianLibertySemiBold;
+  margin-bottom: 40px;
+}
+.home_features .home_features_content .home_features_description {
+  color: #000;
+  font-size: 2rem;
+  font-family: BlitarianLibertyThin;
+  line-height: 48px;
+}
+.home_features .home_features_row_reverse .home_features_content {
+  width: 90%;
+  margin-left: auto;
+}
+
+/* ================================================================ */
+.how_we_works {
+  margin-top: 200px;
+}
+.how_we_works .how_we_works_header {
+  text-align: center;
+}
+.how_we_works .how_we_works_header h6 {
+  color: #000;
+  font-size: 1.2rem;
+  font-family: BlitarianLibertyThin;
+  margin-bottom: 40px;
+}
+.how_we_works .how_we_works_header h5 {
+  color: #000;
+  font-size: 2rem;
+  font-family: BlitarianLibertyThin;
+}
+
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* Shared styles  *//*# sourceMappingURL=style.css.map */
