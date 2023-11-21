@@ -117,13 +117,13 @@ p {
   min-width: 169px;
   justify-content: center;
   align-items: center;
-  background-color: #F23005;
-  border: 1px solid #F23005;
+  background-color: #f23005;
+  border: 1px solid #f23005;
   border-radius: 7px;
   color: #fff;
 }
 .btn_style:hover {
-  color: #F23005;
+  color: #f23005;
   background-color: #fff;
 }
 
@@ -188,7 +188,7 @@ p {
 
 .splashoverlay {
   z-index: 999;
-  background-color: #F23005;
+  background-color: #f23005;
   position: fixed;
   top: 0;
   right: 0;
@@ -333,7 +333,135 @@ p {
   font-family: BlitarianLibertyThin;
 }
 
+.how_we_works_card {
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+}
+.how_we_works_card .line {
+  position: absolute;
+  top: 0;
+  right: -47%;
+  top: 25px;
+  width: 90%;
+  content: "";
+  background-color: #f23005;
+  height: 1px;
+}
+.how_we_works_card .line::after {
+  position: absolute;
+  top: 3px;
+  right: -1px;
+  background-color: #f23005;
+  width: 10px;
+  height: 1px;
+  content: "";
+  z-index: 3;
+  transform: rotate(-45deg);
+}
+.how_we_works_card .line::before {
+  position: absolute;
+  top: -3px;
+  right: -1px;
+  background-color: #f23005;
+  width: 10px;
+  height: 1px;
+  content: "";
+  z-index: 3;
+  transform: rotate(45deg);
+}
+.how_we_works_card .number {
+  width: 49px;
+  height: 49px;
+  background-color: #f23005;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 23px;
+}
+.how_we_works_card .how_we_works_card_title {
+  color: #000;
+  font-size: 2rem;
+  font-style: normal;
+  font-family: BlitarianLibertyMedium;
+}
+.how_we_works_card .how_we_works_card_text {
+  color: #000;
+  font-size: 1.3rem;
+  font-family: BlitarianLibertyThin;
+  line-height: 33px; /* 150% */
+}
+
 /* ================================================================ */
+.home_contact {
+  margin-top: 200px;
+}
+.home_contact .home_contact_header {
+  text-align: center;
+  margin-bottom: 27px;
+}
+.home_contact .home_contact_header h6 {
+  color: #000;
+  font-size: 1.2rem;
+  font-family: BlitarianLibertyThin;
+  margin-bottom: 40px;
+}
+.home_contact .home_contact_header h5 {
+  color: #000;
+  font-size: 2rem;
+  font-family: BlitarianLibertyThin;
+}
+.home_contact .home_contact_header p {
+  color: #000;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-family: BlitarianLibertyThin;
+  line-height: 33px; /* 150% */
+}
+.home_contact .home_contact_header p a {
+  color: #000;
+  font-family: BlitarianLibertySemiBold;
+}
+.home_contact .form_groop {
+  margin: 0 10xo;
+}
+.home_contact .form_groop .form_control {
+  padding: 20px;
+}
+.home_contact .home_contact_header {
+  width: 100% !important;
+}
+.home_contact .home_contact_header form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15ox;
+  width: 100% !important;
+}
+.home_contact .home_contact_header form .form_control {
+  background-color: #fff7f5;
+  border: 0;
+  width: 100%;
+  margin: auto;
+}
+.home_contact .home_contact_header form .form_control::-moz-placeholder {
+  color: #d0b2ab;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-family: BlitarianLibertyThin;
+  line-height: normal;
+}
+.home_contact .home_contact_header form .form_control::placeholder {
+  color: #d0b2ab;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-family: BlitarianLibertyThin;
+  line-height: normal;
+}
+
 /* ================================================================ */
 /* ================================================================ */
 /* ================================================================ */
