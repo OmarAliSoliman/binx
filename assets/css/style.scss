@@ -755,8 +755,10 @@ p {
   .home_contact .home_contact_header form .form-group{
     width: 70%;
   }
-  .nav_icon{
-    display: block;
+  .custom_navbar{
+    .nav_icon{
+      display: block !important;
+    }
   }
 }
 
