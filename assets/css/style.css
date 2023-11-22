@@ -241,7 +241,7 @@ p {
   background-color: #fff;
   width: 200px;
   max-width: 100%;
-  z-index: 4;
+  z-index: 7;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -273,6 +273,14 @@ p {
 /* ================================================================ */
 .custom_navbar {
   padding: 27px 0;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+.custom_navbar .logo img {
+  width: 149px;
+  transition: all 0.3s ease-in-out;
 }
 .custom_navbar .nav_link {
   color: #000;
@@ -300,6 +308,13 @@ p {
   margin-bottom: 3px;
   font-family: Guavast;
   margin-left: auto;
+}
+
+.fixed_navbar {
+  box-shadow: 7px -1px 16px -9px rgba(0, 0, 0, 0.43) !important;
+}
+.fixed_navbar .logo img {
+  width: 110px !important;
 }
 
 /* ================================================================ */
@@ -333,6 +348,9 @@ p {
   font-size: 2rem;
   margin: 0;
 }
+.home_header .home_header_content .world_circle:hover {
+  background-color: #101010;
+}
 .home_header .home_header_content .home_header_title {
   color: #000;
   font-feature-settings: "salt" on;
@@ -357,7 +375,7 @@ p {
 .home_about .home_about_content .home_about_title {
   color: #000;
   font-size: 1.2rem;
-  font-family: BlitarianLibertyThin;
+  font-family: BlitarianLibertyMedium;
   margin-bottom: 80px;
 }
 .home_about .home_about_content .home_about_text {
@@ -425,7 +443,7 @@ p {
 .how_we_works .how_we_works_header h6 {
   color: #000;
   font-size: 1.2rem;
-  font-family: BlitarianLibertyThin;
+  font-family: BlitarianLibertyMedium;
   margin-bottom: 40px;
 }
 .how_we_works .how_we_works_header h5 {
@@ -482,6 +500,8 @@ p {
   justify-content: center;
   margin: auto;
   margin-bottom: 23px;
+  font-family: BlitarianLibertyMedium;
+  font-size: 1.5rem;
 }
 .how_we_works_card .how_we_works_card_title {
   color: #000;
@@ -507,7 +527,7 @@ p {
 .home_contact .home_contact_header h6 {
   color: #000;
   font-size: 1.2rem;
-  font-family: BlitarianLibertyThin;
+  font-family: BlitarianLibertyMedium;
   margin-bottom: 40px;
 }
 .home_contact .home_contact_header h5 {
@@ -573,6 +593,9 @@ p {
 }
 .home_contact .home_contact_header form .btn_submit {
   margin-top: 50px;
+}
+.home_contact .home_contact_header form .btn_submit .btn_style {
+  font-family: BlitarianLibertyMedium;
 }
 
 /* ================================================================ */
@@ -655,7 +678,8 @@ p {
   }
 }
 @media (max-width: 991px) {
-  .custom_navbar .other_links, .custom_navbar .links {
+  .custom_navbar .other_links,
+  .custom_navbar .links {
     display: none !important;
   }
   .home_header {
@@ -672,7 +696,8 @@ p {
   .how_we_works_card .line {
     display: none;
   }
-  .home_contact, .footer {
+  .home_contact,
+  .footer {
     margin-top: 100px;
   }
   .home_contact .home_contact_header form .form-group {
@@ -728,7 +753,8 @@ p {
   .footer .copy_right .website_link {
     text-align: left;
   }
-  .footer .copy_right h5, .footer .copy_right a {
+  .footer .copy_right h5,
+  .footer .copy_right a {
     margin-bottom: 10px;
   }
   .home_about {

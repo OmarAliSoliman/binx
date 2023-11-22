@@ -55,6 +55,16 @@ $(document).ready(function () {
     })
   }
 
+  if($(".custom_navbar").length){
+    $(window).scroll(()=>{
+      if($(this).scrollTop() > 10){
+        $(".custom_navbar").addClass("fixed_navbar")
+      }else{
+        $(".custom_navbar").removeClass("fixed_navbar")
+      }
+    })
+  }
+
   AOS.init();
 });
 

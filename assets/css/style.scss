@@ -230,7 +230,7 @@ p {
   bottom: 0;
   left: 0;
   overflow: hidden;
-  img{
+  img {
     width: 170px !important;
   }
 }
@@ -242,7 +242,6 @@ p {
   bottom: 20px;
   left: 20px;
   font-size: 5rem;
-
 }
 
 .splashoverlay .overlay-loader img {
@@ -251,7 +250,7 @@ p {
 
 .bg_opennav {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.70);
+  background-color: rgba(0, 0, 0, 0.7);
   top: 0;
   left: 0;
   width: 100%;
@@ -259,7 +258,7 @@ p {
   z-index: 2;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .bg_opennav_active {
@@ -268,7 +267,7 @@ p {
   visibility: visible;
 }
 
-.side_nav{
+.side_nav {
   position: fixed;
   top: 0;
   right: 0;
@@ -278,31 +277,30 @@ p {
   background-color: #fff;
   width: 200px;
   max-width: 100%;
-  z-index: 4;
+  z-index: 7;
   display: flex;
   align-items: center;
   justify-content: center;
-  .close_nav{
+  .close_nav {
     position: absolute;
     top: 30px;
     left: 30px;
-    i{
+    i {
       font-size: 2.4rem;
     }
   }
-  .side_links{
+  .side_links {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    li{
+    li {
       padding: 10px;
       text-align: center;
-      a{
+      a {
         font-size: 1.6rem;
         color: #000;
         font-family: $thinFont;
-
       }
     }
   }
@@ -311,7 +309,16 @@ p {
 /* ================================================================ */
 .custom_navbar {
   padding: 27px 0;
-
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+  .logo{
+    img{
+      width: 149px;
+      transition: all .3s ease-in-out;
+    }
+  }
   .nav_link {
     color: #000;
     font-size: 1.2rem;
@@ -337,10 +344,10 @@ p {
       text-transform: uppercase;
     }
   }
-  .nav_icon{
+  .nav_icon {
     text-align: right;
     display: none;
-    span{
+    span {
       width: 30px;
       height: 2px;
       background-color: #000;
@@ -348,6 +355,15 @@ p {
       margin-bottom: 3px;
       font-family: $headerFont;
       margin-left: auto;
+    }
+  }
+}
+
+.fixed_navbar{
+  box-shadow: 7px -1px 16px -9px rgba(0, 0, 0, 0.43) !important;
+  .logo{
+    img{
+      width: 110px !important;
     }
   }
 }
@@ -380,6 +396,9 @@ p {
         font-size: 2rem;
         margin: 0;
       }
+      &:hover {
+        background-color: #101010;
+      }
     }
     .home_header_title {
       color: #000;
@@ -409,7 +428,7 @@ p {
     .home_about_title {
       color: #000;
       font-size: 1.2rem;
-      font-family: $thinFont;
+      font-family: $madiumFont;
       margin-bottom: 80px;
     }
 
@@ -498,7 +517,7 @@ p {
     h6 {
       color: #000;
       font-size: 1.2rem;
-      font-family: $thinFont;
+      font-family: $madiumFont;
       margin-bottom: 40px;
     }
 
@@ -558,6 +577,8 @@ p {
     justify-content: center;
     margin: auto;
     margin-bottom: 23px;
+    font-family: $madiumFont;
+    font-size: 1.5rem;
   }
   .how_we_works_card_title {
     color: #000;
@@ -582,7 +603,7 @@ p {
     h6 {
       color: #000;
       font-size: 1.2rem;
-      font-family: $thinFont;
+      font-family: $madiumFont;
       margin-bottom: 40px;
     }
 
@@ -641,6 +662,9 @@ p {
       }
       .btn_submit {
         margin-top: 50px;
+        .btn_style {
+          font-family: $madiumFont;
+        }
       }
     }
   }
@@ -729,47 +753,49 @@ p {
   }
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .custom_navbar {
-    .other_links, .links{
+    .other_links,
+    .links {
       display: none !important;
     }
   }
-  .home_header{
+  .home_header {
     padding-top: 50px;
-    .home_header_img{
+    .home_header_img {
       width: 50%;
       margin: auto;
     }
   }
-  .home_about .home_about_img{
+  .home_about .home_about_img {
     width: 50%;
     margin: auto;
   }
-  .how_we_works_card .line{
+  .how_we_works_card .line {
     display: none;
   }
-  .home_contact, .footer{
+  .home_contact,
+  .footer {
     margin-top: 100px;
   }
-  .home_contact .home_contact_header form .form-group{
+  .home_contact .home_contact_header form .form-group {
     width: 70%;
   }
-  .custom_navbar{
-    .nav_icon{
+  .custom_navbar {
+    .nav_icon {
       display: block !important;
     }
   }
 }
 
-@media (max-width: 600px){
-  .home_header .home_header_content .home_header_title{
+@media (max-width: 600px) {
+  .home_header .home_header_content .home_header_title {
     font-size: 4.5rem;
   }
-  .home_header .home_header_content .home_header_text{
+  .home_header .home_header_content .home_header_text {
     font-size: 2rem;
   }
-  .home_header .home_header_content .world_circle{
+  .home_header .home_header_content .world_circle {
     position: unset;
     // bottom: 0;
     transform: translate(0, 0);
@@ -780,54 +806,54 @@ p {
   }
   .home_header {
     padding-top: 0;
-    .home_header_img{
-      display: none ;
+    .home_header_img {
+      display: none;
     }
   }
-  .home_about .home_about_content .home_about_title{
+  .home_about .home_about_content .home_about_title {
     margin-bottom: 20px;
     margin-top: 50px;
   }
-  .home_about .home_about_img{
+  .home_about .home_about_img {
     width: 80%;
   }
-  .home_features .home_features_content .home_features_title{
+  .home_features .home_features_content .home_features_title {
     margin-top: 30px;
   }
-  .order1inmobile{
+  .order1inmobile {
     order: 1;
   }
-  .order2inmobile{
+  .order2inmobile {
     order: 2;
   }
-  .home_contact .home_contact_header form .form_wrapper{
+  .home_contact .home_contact_header form .form_wrapper {
     flex-direction: column;
-    .form-group{
+    .form-group {
       width: 100%;
     }
-
   }
 
-  .footer .copy_right .website_link{
+  .footer .copy_right .website_link {
     text-align: left;
   }
 
-  .footer .copy_right h5, .footer .copy_right a{
-    margin-bottom: 10px ;
+  .footer .copy_right h5,
+  .footer .copy_right a {
+    margin-bottom: 10px;
   }
-  .home_about{
+  .home_about {
     margin-top: 0;
   }
 }
 
-@media(max-width: 320px){
-  .home_features .home_features_content .home_features_title{
+@media (max-width: 320px) {
+  .home_features .home_features_content .home_features_title {
     font-size: 2.4rem;
   }
 }
 
-@media(max-width: 290px){
-  .home_header .home_header_content .home_header_title{
+@media (max-width: 290px) {
+  .home_header .home_header_content .home_header_title {
     font-size: 3.7rem;
   }
 }
