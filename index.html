@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="./assets/images/favicon.ico">
   <link rel="stylesheet" href="./assets/css/all.min.css" />
   <link rel="stylesheet" href="./assets/css/aos.css" />
 
@@ -22,17 +22,42 @@
 
 <body>
 
+  <!-- loading -->
+  <div class="splashoverlay">
+    <div class="overlay-loader">
+      <img src="./assets/images/logo.svg" alt="">
+    </div>
+    <div id="counter"><span>0</span></div>
+  </div>
+
+  <div class="bg_opennav"></div>
+
+  <div class="side_nav">
+    <div class="close_nav">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="side_links">
+      <ul class="list-unstyled">
+        <li class="nav_item"><a class="nav_link" href="#aboutSection">About</a></li>
+        <li class="nav_item"><a class="nav_link" href="#featuresSection">Features</a></li>
+        <li class="nav_item"><a class="nav_link" href="#howItWorksSection">How it works</a></li>
+        <li class="nav_item"><a class="nav_link" href="#contactSection">Contact</a></li>
+        <li><a class="nav_link" href="">BINNOVA STUDIO</a></li>
+      </ul>
+      </ul>
+    </div>
+  </div>
 
   <div class="custom_navbar">
     <div class="container-fluid pd-150">
       <div class="custom_navbar_wrapper">
-        <div class="row">
-          <div class="col-sm-12 col-md-3 col-lg-3">
+        <div class="row align-items-center">
+          <div class="col-6 col-md-6 col-lg-3">
             <div class="logo">
               <a href=""><img src="./assets/images/logo.svg" alt=""></a>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="col-6 d-none d-lg-block col-md-6 col-lg-6">
             <div class="links">
               <ul class="list-unstyled d-flex align-items-center justify-content-center mb-0">
                 <li class="nav_item"><a class="nav_link" href="#aboutSection">About</a></li>
@@ -42,7 +67,12 @@
               </ul>
             </div>
           </div>
-          <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="col-6 col-md-6 col-lg-3">
+            <div class="nav_icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <div class="other_links d-flex align-items-center justify-content-end">
               <a class="nav_link" href="">BINNOVA STUDIO</a>
             </div>
@@ -53,12 +83,12 @@
   </div>
 
 
-
-  <div class="home_header">
+  <div class="home_header" data-aos="fade-up">
     <div class="container-fluid pd-150">
       <div class="row align-items-center">
-        <div class="col-sm-12 col-md-7 col-lg-8">
-          <div class="home_header_content">
+        <div class="col-sm-12 col-md-12 col-lg-8">
+          <div class="home_header_content" data-aos="fade-down">
+
             <h5 class="home_header_title">
               Revolutionize Your<br /> E-Commerce Experieeence <br />
               with BINN-X
@@ -68,10 +98,13 @@
               your online store's UI/UX for
               unmatched conversion rates
             </p>
+            <div class="world_circle">
+              <h6>Request Early Access</h6>
+            </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-5 col-lg-4">
-          <div class="home_header_img">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="home_header_img" data-aos="fade-up">
             <img src="./assets/images/headerimg.png" alt="">
           </div>
         </div>
@@ -81,17 +114,17 @@
 
 
 
-  <div class="home_about">
+  <div class="home_about" id="aboutSection">
     <div class="container-fluid pd-150">
       <div class="home_about_wrapper">
         <div class="row align-items-center">
-          <div class="col-sm-12 col-md-6 col-lg-5">
-            <div class="home_about_img">
+          <div class="col-sm-12 col-md-12 col-lg-5" id="scene">
+            <div class="home_about_img" data-depth="0.5" data-aos="fade-up">
               <img src="./assets/images/about-img.svg" alt="">
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="home_about_content">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="home_about_content" data-aos="fade-down">
               <h5 class="home_about_title"><span>( 01 )</span> About BINN X</h5>
               <p class="home_about_text">
                 At BINNOVA, We believe every click matters. Our AI-driven tool analyzes your e-commerce website to
@@ -108,7 +141,7 @@
 
 
 
-  <div class="home_features">
+  <div class="home_features" id="featuresSection">
     <div class="container-fluid pd-150">
       <div class="home_features_wrapper">
         <div class="home_features_header col-lg-7 mx-auto">
@@ -118,12 +151,12 @@
         <div class="home_features_row">
           <div class="row align-items-center">
             <div class="col-sm-12 col-md-6 col-lg-5">
-              <div class="home_features_img">
-                <img src="./assets/images/feature1.jpg" alt="">
+              <div class="home_features_img" data-aos="fade-up">
+                <img src="./assets/images/fat1.png" alt="">
               </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-7">
-              <div class="home_features_content">
+              <div class="home_features_content" data-aos="fade-down">
                 <h5 class="home_features_title">Intuitive Analytics Dashboard</h5>
                 <p class="home_features_description col-lg-7">Visualize your site's performance and our AI's
                   recommendations in one place.</p>
@@ -135,17 +168,17 @@
         <div class="home_features_row home_features_row_reverse">
           <div class="row align-items-center">
 
-            <div class="col-sm-12 col-md-6 col-lg-7">
-              <div class="home_features_content">
+            <div class="col-sm-12 col-md-6 col-lg-7 order2inmobile">
+              <div class="home_features_content" data-aos="fade-down">
                 <h5 class="home_features_title">Intuitive Analytics Dashboard</h5>
                 <p class="home_features_description col-lg-7">Visualize your site's performance and our AI's
                   recommendations in one place.</p>
               </div>
             </div>
 
-            <div class="col-sm-12 col-md-6 col-lg-5">
-              <div class="home_features_img">
-                <img src="./assets/images/feature1.png" alt="">
+            <div class="col-sm-12 col-md-6 col-lg-5 order1inmobile">
+              <div class="home_features_img" data-aos="fade-up">
+                <img src="./assets/images/fat2.png" alt="">
               </div>
             </div>
           </div>
@@ -155,12 +188,12 @@
         <div class="home_features_row">
           <div class="row align-items-center">
             <div class="col-sm-12 col-md-6 col-lg-5">
-              <div class="home_features_img">
-                <img src="./assets/images/feature1.jpg" alt="">
+              <div class="home_features_img" data-aos="fade-up">
+                <img src="./assets/images/fat3.png" alt="">
               </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-7">
-              <div class="home_features_content">
+              <div class="home_features_content" data-aos="fade-down">
                 <h5 class="home_features_title">A/B Testing Platform</h5>
                 <p class="home_features_description col-lg-7">Easily test our AI's recommendations to see the impact in
                   real-time</p>
@@ -173,17 +206,17 @@
         <div class="home_features_row home_features_row_reverse">
           <div class="row align-items-center">
 
-            <div class="col-sm-12 col-md-6 col-lg-7">
-              <div class="home_features_content">
+            <div class="col-sm-12 col-md-6 col-lg-7 order2inmobile">
+              <div class="home_features_content" data-aos="fade-down">
                 <h5 class="home_features_title">Continuous Learning</h5>
                 <p class="home_features_description col-lg-7">Our AI evolves with your business, offering insights that
                   keep you ahead of the curve.</p>
               </div>
             </div>
 
-            <div class="col-sm-12 col-md-6 col-lg-5">
-              <div class="home_features_img">
-                <img src="./assets/images/feature1.png" alt="">
+            <div class="col-sm-12 col-md-6 col-lg-5 order1inmobile">
+              <div class="home_features_img" data-aos="fade-up">
+                <img src="./assets/images/fat4.png" alt="">
               </div>
             </div>
           </div>
@@ -196,15 +229,15 @@
 
 
 
-  <div class="how_we_works">
+  <div class="how_we_works" id="howItWorksSection">
     <div class="container-fluid pd-150">
       <div class="how_we_works_wrapper">
-        <div class="how_we_works_header">
+        <div class="how_we_works_header" data-aos="fade-up">
           <h6><span>( 03 ) </span>How It Works</h6>
           <h5>From Analysis to Action in Three Steps</h5>
         </div>
 
-        <div class="how_we_works_wrapper_rows">
+        <div class="how_we_works_wrapper_rows" data-aos="fade-up">
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-4">
               <div class="how_we_works_card">
@@ -240,26 +273,84 @@
 
 
 
-  <div class="home_contact">
+  <div class="home_contact" id="contactSection">
     <div class="container-fluid pd-150">
       <div class="hhome_contact_wrapper">
-        <div class="home_contact_header">
+        <div class="home_contact_header" data-aos="fade-up">
           <h6><span>( 03 ) </span>How It Works</h6>
           <h5>We'd Love to Hear from You!!</h5>
           <p class="col-lg-6 mx-auto">
             Get in touch to learn more about BINNOVA and how we can help transform your e-commerce site. Email us at
             <a href="">contact@binnova.com</a> or fill out our contact form
           </p>
-          <form action="">
-            <div class="form_groop">
-              <input type="text" placeholder="Your Company Email" class="form_control">
+          <form action="" data-aos="fade-up">
+            <div class="form_wrapper">
+              <div class="form-group">
+                <input type="text" placeholder="Your Company Email" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Your Company Email" class="form-control">
+              </div>
             </div>
-            <div class="form_groop">
-              <input type="text" placeholder="Your Company Email" class="form_control">
+            <div class="btn_submit">
+              <button class="btn_style">Send</button>
             </div>
           </form>
         </div>
       </div>
+    </div>
+  </div>
+
+
+  <div class="footer" data-aos="fade-up">
+    <div class="container-fluid pd-150">
+      <div class="row">
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="get_in_toutch">
+            <h5>GET IN TOUCH</h5>
+            <a href="" class="footer_link">Hello@binnova.studio</a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="get_in_toutch footer_links">
+            <h5>Connect</h5>
+            <ul class="list-unstyled">
+              <li><a href="" class="footer_link">Linkedin</a></li>
+              <li><a href="" class="footer_link">Instagram</a></li>
+              <li><a href="" class="footer_link">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 d-none d-md-block col-md-3 col-lg-3"></div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="get_in_toutch back_to_top">
+            <a class="footer_link">BACK TO TOP</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="copy_right">
+        <div class="row">
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="copy_text">
+              <h5>©2023 BINNOVA STUDIO</h5>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="copy_text">
+              <h5>ALL RIGHTS RESERVED</h5>
+            </div>
+          </div>
+          <div class="col-sm-12 d-none d-md-block col-md-3 col-lg-3"></div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="copy_text website_link">
+              <a href="">WWW.BINNOVA.STUDIO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
