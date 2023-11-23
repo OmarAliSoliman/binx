@@ -646,14 +646,14 @@ p {
         margin-bottom: 10px;
       }
       .form-control {
-        background-color: #fff7f5;
+        background-color: #FAFAFA;
         border: 0;
         margin: auto;
         height: 100%;
         border-radius: 5px;
         padding: 24px;
         &::placeholder {
-          color: #d0b2ab;
+          color: #CBCBCB;
           font-size: 1.1rem;
           font-style: normal;
           font-family: $thinFont;

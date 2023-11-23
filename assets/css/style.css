@@ -570,7 +570,7 @@ p {
   margin-bottom: 10px;
 }
 .home_contact .home_contact_header form .form-control {
-  background-color: #fff7f5;
+  background-color: #FAFAFA;
   border: 0;
   margin: auto;
   height: 100%;
@@ -578,14 +578,14 @@ p {
   padding: 24px;
 }
 .home_contact .home_contact_header form .form-control::-moz-placeholder {
-  color: #d0b2ab;
+  color: #CBCBCB;
   font-size: 1.1rem;
   font-style: normal;
   font-family: BlitarianLibertyThin;
   line-height: normal;
 }
 .home_contact .home_contact_header form .form-control::placeholder {
-  color: #d0b2ab;
+  color: #CBCBCB;
   font-size: 1.1rem;
   font-style: normal;
   font-family: BlitarianLibertyThin;
