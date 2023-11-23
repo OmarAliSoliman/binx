@@ -664,6 +664,7 @@ p {
         margin-top: 50px;
         .btn_style {
           font-family: $madiumFont;
+          font-size: 1.4rem;
         }
       }
     }
@@ -807,7 +808,13 @@ p {
   .home_header {
     padding-top: 0;
     .home_header_img {
-      display: none;
+      // display: none;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%) !important;
+      left: 50%;
+      opacity: .2 !important;
+      z-index: -1;
     }
   }
   .home_about .home_about_content .home_about_title {
